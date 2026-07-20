@@ -103,11 +103,6 @@
 
   .main { display: flex; flex-direction: column; min-height: 100%; }
 
-  .home {
-    padding: 34px 36px 30px;
-    border-bottom: 1px solid var(--border);
-  }
-
   nav {
     display: flex;
     gap: 26px;
@@ -177,7 +172,13 @@
   </div>
 
   <div class="main">
-    <div class="home">
+    <nav>
+      <button class="tab active" data-tab="about">About Me</button>
+      <button class="tab" data-tab="experience">Experience and Projects</button>
+      <button class="tab" data-tab="contact">Contact</button>
+    </nav>
+
+    <div class="panel active" id="about">
       <h2>About Me</h2>
       <p>I am currently a Research Assistant at the Vancouver School of Economics, UBC, working with Professor Miguel Ortiz on a multi-wave randomized controlled trial studying the effects of Chinese and American business-training programs on worker productivity among firms in Addis Ababa, Ethiopia, in collaboration with Professor David Wu (Georgia State University).</p>
       <p>I recently completed a B.A. in Economics and Statistics, with a minor in Data Science, at the University of British Columbia. Before returning to research, I worked as an investment analyst in London at Arbion and Union Bancaire Privée.</p>
@@ -185,12 +186,7 @@
       <p>Looking ahead, I am applying to predoctoral research positions and, eventually, PhD programs in economics.</p>
     </div>
 
-    <nav>
-      <button class="tab active" data-tab="experience">Experience and Projects</button>
-      <button class="tab" data-tab="contact">Contact</button>
-    </nav>
-
-    <div class="panel active" id="experience">
+    <div class="panel" id="experience">
       <h2>Experience and Projects</h2>
 
       <div class="entry">
